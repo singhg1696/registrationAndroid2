@@ -23,6 +23,6 @@
         android:layout_height="wrap_content"
         android:completionHint="Type Country Name"
         android:completionThreshold="3"
-        android:hint="Type Country Name"
+        android:hint="Search Students Name"
         />
 </LinearLayout>
