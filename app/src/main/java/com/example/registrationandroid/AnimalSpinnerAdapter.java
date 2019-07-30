@@ -38,10 +38,10 @@ public class AnimalSpinnerAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = LayoutInflater.from(context).inflate(R.layout.image_spinner, null);
-        ImageView icon = (ImageView) view.findViewById(R.id.imageView);
+        ImageView icon = (ImageView) view.findViewById(R.id.imageView );
         TextView names = (TextView) view.findViewById(R.id.textView);
 
-        Animal manimal =getItem(i);
+        Animal manimal = getItem(i);
         icon.setImageResource(manimal.getAnimalID());
         names.setText(manimal.getAnimalName());
         return view;
