@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnu_Add"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/mnu_Update"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Update"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/mnu_Delete"
+        android:title="Delete"
+        app:showAsAction="always"/>
+    <item android:id="@+id/mnu_Next"
+        android:title="Next"
+        app:showAsAction="ifRoom">
+
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <item
+                android:id="@+id/mnuAdd"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="Add"
+                app:showAsAction="always"/>
+            <item
+                android:id="@+id/mnu_pdate"
+                android:icon="@android:drawable/ic_dialog_email"
+                android:title="Update"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/mnuDelete"
+                android:title="Delete"
+                app:showAsAction="always"/>
+            <item android:id="@+id/mnuNext"
+                android:title="Next"
+                app:showAsAction="ifRoom">
+
+
+
+            </item>
+
+
+
+        </menu>
+
+    </item>
+
+
+
+</menu>
