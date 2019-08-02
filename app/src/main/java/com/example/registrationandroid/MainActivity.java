@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
          registerForContextMenu(button);
         ArrayAdapter<String> mStringArrayAdapter = new ArrayAdapter<>(MainActivity.this,
                 android.R.layout.simple_spinner_dropdown_item, studentsData);
-        setSpinnerwithTextandImage();
+//        setSpinnerwithTextandImage();
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
         {
@@ -61,20 +61,20 @@ public class MainActivity extends AppCompatActivity {
         autoCompleteTextView.setAdapter(mStringArrayAdapter);
     }
 
-    public void setSpinnerwithTextandImage()
-    {
-        customSpinner = findViewById(R.id.spinnerTextImage);
-
-        ArrayList<Animal>animalArrayList = new ArrayList<>();
-        animalArrayList.add(new Animal(1,"Dog",R.drawable.dog));
-        animalArrayList.add(new Animal(1,"Camel",R.drawable.camel));
-        animalArrayList.add(new Animal(1,"Elephant",R.drawable.elephant));
-        animalArrayList.add(new Animal(1,"Zebra",R.drawable.zebra));
-
-        AnimalSpinnerAdapter animalSpinnerAdapter = new AnimalSpinnerAdapter(MainActivity.this,animalArrayList);
-       customSpinner.setAdapter(animalSpinnerAdapter);
-
-    }
+//    public void setSpinnerwithTextandImage()
+//    {
+//        customSpinner = findViewById(R.id.spinnerTextImage);
+//
+//        ArrayList<Animal>animalArrayList = new ArrayList<>();
+//        animalArrayList.add(new Animal(1,"Dog",R.drawable.dog));
+//        animalArrayList.add(new Animal(1,"Camel",R.drawable.camel));
+//        animalArrayList.add(new Animal(1,"Elephant",R.drawable.elephant));
+//        animalArrayList.add(new Animal(1,"Zebra",R.drawable.zebra));
+//
+//        AnimalSpinnerAdapter animalSpinnerAdapter = new AnimalSpinnerAdapter(MainActivity.this,animalArrayList);
+//       customSpinner.setAdapter(animalSpinnerAdapter);
+//
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
